@@ -1,0 +1,13 @@
+@mixin clearfix {
+	&::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+@mixin calcGrid($col,$col-of) {
+	$column-width: calc(((100% - (#{$col-of}-1)*#{$gutter_horizontal})/#{$col-of})*#{$col} + (#{col}-1)*#{$gutter_horizontal});
+	width: $column-width;
+}
+
