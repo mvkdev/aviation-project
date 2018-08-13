@@ -15,7 +15,12 @@ const indexRoutes		= require('./routes/index');
 
 //Initialize Mongo DB
 
-mongoose.connect('mongodb://localhost:27017/avdb',{useNewUrlParser: true});
+mongoose.connect('mongodb://localhost:27017/avdb',{useNewUrlParser: true}, (err) => {
+	if(err)
+		console.log('MongoDB Connection failed!! --- Error:  ',err);
+	else
+		console.log('MongoDB connection successfull!! -- YAY!');
+});
 
 //Init Express
 const app = express();
