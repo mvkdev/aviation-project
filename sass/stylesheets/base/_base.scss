@@ -11,5 +11,6 @@ html {
 } 
 
 body {
+	background-color: $color-pri-dark-blue;
 	box-sizing: border-box; /* makes width and height relate to complete Box instead of only to Content - So Padding is not added to width and height*/
 }

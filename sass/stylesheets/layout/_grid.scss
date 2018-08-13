@@ -10,8 +10,8 @@
 	
 	[class^="col-"] {
 		float:left;
-		background-color: $grid_test_color;
-		color:white;
+		background-color: $color-pri-taupe;
+		color: $color-white;
 
 		&:not(:last-child){
 			margin-right: $gutter_horizontal;
